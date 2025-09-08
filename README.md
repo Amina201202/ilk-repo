@@ -1,1 +1,1 @@
-Salam, bu mənim ilk commitimdir!
+Bu mənim ilk commitimdir!
