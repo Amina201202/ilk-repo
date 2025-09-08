@@ -1,0 +1,1 @@
+Salam, bu mənim ilk commitimdir!
