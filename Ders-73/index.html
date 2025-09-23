@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      .nav {
+        display: flex;
+        background-color: #181818;
+        position: sticky;
+      }
+
+      ul {
+        list-style-type: none;
+        display: flex;
+        margin-left: 30%;
+      }
+
+      li {
+        font-weight: bold;
+        padding: 20px;
+        padding-left: 35px;
+        color: grey;
+      }
+
+      .icon2 {
+        color: green;
+        margin-top: 20px;
+        margin-left: 20%;
+      }
+
+      img {
+        margin: 10px;
+        margin-left: 50px;
+      }
+
+      li:hover {
+        color: white;
+        text-decoration: underline;
+      }
+
+      .ord {
+        border: 2px solid orange;
+        font-weight: bold;
+        height: 40px;
+        padding: 10px;
+        margin-left: 20%;
+        margin-top: 10px;
+        color: orange;
+      }
+
+      .ord2 {
+        border: 2px solid orange;
+        font-weight: bold;
+        color: orange;
+        display: inline-block;
+        padding: 10px;
+      }
+
+      /* .right {
+            height: auto;
+            background-image: url(./burger.photo2.jpg);
+          } */
+
+      .first-section {
+        height: 90vh;
+        background: url(./burger.photo2.jpg) no-repeat center;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+      
+
+      .second-section {
+        justify-content: center;
+        display: flex;
+      }
+
+      .third-section {
+        background-color: #181818;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+      }
+
+      .text {
+        margin-left: 100px;
+      }
+
+      .text h1 {
+        font-size: 48px;
+        color: #fff;
+      }
+
+      .text h2 {
+        font-size: 32px;
+        color: #f7b32b;
+      }
+
+      .text p {
+        margin: 5px 0;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <div class="icon">
+          <img
+            src="./burger.icon2.jpg"
+            style="width: 50px; height: 45px"
+            alt=""
+          />
+        </div>
+        <div class="navbar">
+          <ul>
+            <li>HOME</li>
+            <li>PAGES</li>
+            <li>ABOUT</li>
+            <li>MENU</li>
+            <li>NEWS</li>
+          </ul>
+        </div>
+        <div class="ord">ORDER</div>
+        <div class="icon2">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </div>
+
+      <div
+        class="first-section">
+        <div class="main" style="margin-right: 150px;">
+          <p style="font-weight: bolder; color: #f9b332; font-size: 50px;">
+            Best Burger <br />
+            In The Town
+          </p>
+          <p style="color: #975b30; padding: 5px;">
+            Lorem ipsum dolor sit amet consectetur <br />
+            adipisicing elit. Dolorem, tenetur.
+          </p>
+          <div style="margin-left: 25px;" class="ord2">ORDER</div>
+        </div>
+      </div>
+
+      <div class="second-section" style="padding: 50px">
+        <div class="food" style="margin-right: 100px">
+          <img
+            src="./cola.icon.png"
+            style="width: 120px; height: 120px"
+            alt=""
+          />
+          <h3><b>Delicious food</b></h3>
+          <p>
+            Lorem ipsum dolor sit amet <br />
+            consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="basket" style="margin-right: 100px">
+          <img
+            src="./basket.icon.png"
+            style="width: 120px; height: 120px"
+            alt=""
+          />
+          <h3><b>Professional service</b></h3>
+          <p>
+            Lorem ipsum dolor sit amet <br />
+            consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="sous" style="margin-right: 100px">
+          <img
+            src="./sous.icon.png"
+            style="width: 120px; height: 120px"
+            alt=""
+          />
+          <h3><b>Amazing Menu</b></h3>
+          <p>
+            Lorem ipsum dolor sit amet <br />
+            consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+
+      <div class="third-section">
+        <img src="./burger.son.jpg" alt="" />
+        <div class="text">
+          <h1><b>Burger Zone</b></h1>
+          <h2><b>50% offer on</b></h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
