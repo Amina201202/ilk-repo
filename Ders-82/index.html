@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1
+      // cetin
+      let arr = [5, 7, 4, 8];
+
+      let hasil = arr.reduce((a, b) => a * b);
+      console.log(hasil);
+
+      let cem = arr.reduce((a, b) => a + b);
+      console.log(cem);
+
+      //   2
+
+      let cumle = "Men dersi sevirem";
+      let sozlereBol = cumle.split(" ");
+      let tersine = sozlereBol.reverse();
+      let join = tersine.join(" ");
+      console.log(join);
+
+      //   3
+
+      let arr1 = [1, 2, 3, 4];
+      let arr2 = [3, 4, 5];
+      eyniEded = [];
+
+      arr1.forEach((element) => {
+        if (arr2.includes(element)) eyniEded.push(element);
+      });
+
+      console.log(eyniEded);
+
+      // 4
+
+      let adlar = ["Aylin", "Ayten", "Leman", "Nuray", "Sona"];
+      let n_ile_biten = adlar.some(
+        (element) => element[element.length - 1] == "n"
+      );
+      console.log(n_ile_biten);
+      let filterN = adlar.filter(
+        (element) => element[element.length - 1] == "n"
+      );
+      console.log(filterN);
+
+      // 5
+
+      let ededler = [1, 2, 3];
+      let ededler2 = [...ededler, 4, 5];
+      console.log(ededler2);
+      // cetin
+
+      // asan
+      // 1
+      let arr3 = [1, 2, 3, 4];
+      let hasil2 = arr3.reduce((a, b) => a * b);
+      console.log(hasil2);
+
+      // 2
+
+      let soz = "Amina";
+      let deyisdirilmis = soz.split("").reverse().join("");
+      console.log(deyisdirilmis);
+
+      // 3
+
+      let names = ["Amina", "Aylin", "Leman", "Yusif"];
+
+      let aOlan = names.some((name) => name[0] === "A");
+      console.log(aOlan);
+
+      // 4
+      let names2 = ["Aylin", "Amina", "Arif"];
+
+      let eyniherf = names2.every((name) => name[0] === "A");
+      console.log(eyniherf);
+
+      // 5
+
+      let numbers = [7, 4, 15, 1, 6];
+
+      let minNumber = Math.min(...numbers);
+      console.log(minNumber);
+      // asan
+
+      // orta
+      // 1
+      let meyveler = ["Alma", "Banan", "Armud"];
+      let meyveler2 = [...meyveler, "Nar", "Mandarin"];
+      console.log(meyveler2);
+
+      // 3
+      let adlar1 = ["Sona", "Amina", "Leman", "Nuray"];
+      console.log(adlar.reverse());
+
+      // 4
+      let ad = "Amina".split("");
+      let tersAd = ad.reverse();
+      console.log(tersAd.join("-"));
+
+      // 5
+      let adlar3 = ["Aylin", "Fuad", "Amina", "Eli"];
+      let yoxla = adlar3.some((ad) => ad.length < 5);
+      console.log(yoxla);
+    </script>
+  </body>
+</html>
