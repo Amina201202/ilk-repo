@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //task1 cetin//
+      let ededler = [-1, -2, -6, 8, -2, 12, -66];
+      let musbetCut = [];
+
+      for (const element of ededler) {
+        if (element > 0 && element % 2 == 0) {
+          musbetCut.push(element);
+        }
+      }
+      console.log(musbetCut);
+
+      //task2 cetin//
+      let userData = {
+        userName: "Amina",
+        userAge: 13,
+        userMoney: 500,
+        userSurname: "isayeva",
+      };
+
+      let total = 0;
+
+      for (const key in userData) {
+        if (!Object.hasOwn(userData, key)) continue;
+
+        if (!isNaN(userData[key])) {
+          total += userData[key];
+        }
+      }
+
+      console.log(total);
+
+      //task3 cetin//
+      let eded = 0;
+      let total1 = 0;
+      while (eded < 100) {
+        total1 += eded;
+        if (eded == 50) {
+          break;
+        }
+
+        eded++;
+      }
+
+      console.log(total1);
+
+      //   task1 asan
+
+      let adlar1 = ["Amina", "Sona", "Güllü"];
+      for (const element of adlar1) {
+        console.log(element);
+      }
+
+      // task2 asan
+
+      let userData1 = {
+        userName: "Amina",
+        userAge: 13,
+        userSurname: "isayeva",
+      };
+
+      for (const key in userData1) {
+        console.log(userData1[key]);
+      }
+
+      // task3 asan
+
+      let i = 0;
+
+      while (i <= 10) {
+        console.log(i);
+        i++;
+      }
+
+      // task4 asan
+
+      let adlar2 = ["Amina", "Gunel", "Sona", "Zehra"];
+
+      for (const element of adlar2) {
+        console.log("Salam", element);
+      }
+
+      // task5 asan
+
+      let userData2 = {
+        userName: "Amina",
+        userAge: 13,
+        userSurname: "isayeva",
+      };
+
+      for (const key in userData1) {
+        console.log(userData1[key]);
+      }
+
+      // task6 asan
+
+      let eded2 = 0;
+      let limit = 20;
+
+      while (eded2 < limit) {
+        console.log(eded2);
+
+        if (eded2 == 10) {
+          break;
+        }
+        eded2++;
+      }
+
+      // task7 asan
+
+      for (let index = 0; index <= 15; index++) {
+        if (index == 5 || index == 10) {
+          continue;
+        }
+        console.log(index);
+      }
+
+      // task8 asan
+
+      let adlar3 = ["Ehmed", "Fuad", "Ali", "Ilkin"];
+      for (let i = 0; i < adlar3.length; i++) {
+        if (adlar3[i] == "Ali") {
+          break;
+        }
+        console.log(adlar3[i]);
+      }
+
+      // task9 asan
+
+      let heyvanlar = ["pişik", "it", "aslan", "fil"];
+
+      for (let element of heyvanlar) {
+        console.log(element.toUpperCase());
+      }
+
+      // task10 asan
+
+      let i1 = 0;
+
+      while (i1 <= 30) {
+        if (i1 % 2 === 0) {
+          console.log(i1);
+        }
+
+        i1++;
+      }
+
+      // task11 asan
+
+      let names = ["Amina", "Fuad", "Tural", "Nuray"];
+
+      for (let element of names) {
+        console.log(element.split("").reverse().join(""));
+      }
+
+      // task12 asan
+
+      let user = {
+        ad: "Amine",
+        yaş: 13,
+        soyad: "Isayeva",
+      };
+
+      for (let key in user) {
+        console.log(key + ":", user[key]);
+      }
+
+      // task13 asan
+
+      let index = 0;
+
+      while (index <= 5) {
+        console.log("index:", index);
+        index++;
+      }
+
+      // task14 asan
+
+      for (let i = 0; i <= 5; i++) {
+        if (i === 3) continue;
+        console.log(i);
+      }
+
+      // task15 asan
+
+      for (let i = 0; i <= 10; i++) {
+        if (i == 7) break;
+        console.log(i);
+      }
+
+      // task1 orta
+
+      // ??
+
+      // task2 orta
+
+      let person = {
+        name: "Aminə",
+        age: 20,
+        city: "Gəncə",
+      };
+
+      let values = [];
+
+      for (let key in person) {
+        values.push(person[key]);
+      }
+
+      console.log(values);
+
+      // task3 orta
+
+      let eded3 = 0;
+      let limit1 = 100;
+
+      while (eded3 < limit1) {
+        if (eded3 % 5 == 0) {
+          console.log(eded3);
+        }
+        eded3++;
+      }
+
+      // task4 orta
+
+      for (let i = 1; i <= 10; i++) {
+        if (i % 2 == 0) {
+          continue;
+        }
+        console.log(i);
+      }
+
+      // task5 orta
+
+      let adlar = ["Aminə", "Ramil", "Zehra", "Elvin", "Nigar"];
+
+      for (let i = 0; i < adlar.length; i++) {
+        if (adlar[i] == "Zehra") {
+          break;
+        }
+        console.log(adlar[i]);
+      }
+
+      // task6 orta
+
+      let ededler1 = [5, 3, 2, 0, 7];
+      let i2 = 0;
+      let cem = 0;
+
+      while (ededler1[i2] !== 0) {
+        cem = cem + ededler1[i2];
+        i2++;
+      }
+
+      console.log("Cəmi:", cem);
+
+      // task7 orta
+
+      let ededler3 = {
+        a: 3,
+        b: 13,
+        c: 33,
+      };
+
+      let cem1 = 0;
+      for (let key in ededler3) {
+        cem1 = cem1 + ededler3[key];
+      }
+
+      console.log(cem1);
+
+      // task8 orta
+
+      let ededler2 = [2, 4, 6, 8];
+
+      for (let eded of ededler2) {
+        console.log(eded * 2);
+      }
+
+      // task9 orta
+
+      let eded4 = 1;
+      let limit2 = 50;
+
+      while (eded4 < limit2) {
+        console.log(eded4);
+
+        if (eded4 == 25) {
+          break;
+        }
+        eded4++;
+      }
+
+      // task10 orta
+
+      for (let i = 0; i <= 30; i++) {
+        if (i % 3 === 0) {
+          console.log(i);
+        }
+      }
+    </script>
+  </body>
+</html>
