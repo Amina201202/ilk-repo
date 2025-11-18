@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1>Anbar Üzrə Yeni Məhsul Girişi</h1>
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Yeni Məhsul
+    </button>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Yeni məhsul</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"
+                >Kateqoriya</span
+              >
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Məs: Electronics"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+                id="product-name"
+              />
+            </div>
+
+            <div class="input-group mb-3">
+              <span class="input-group-text">Stok sayı</span>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Məs: 25"
+                aria-label="Amount (to the nearest dollar)"
+                id="product-price"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Şəkil linki</span>
+              <input
+                type="url"
+                class="form-control"
+                placeholder="URL"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+                id="product-photo"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="addProduct()"
+            >
+              Məlumatı Əlavə Et
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <table class="table table-dark table-striped" style="text-align: center">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Kateqoriya</th>
+          <th>Stok</th>
+          <th>Şəkil</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="./app.js"></script>
+  </body>
+</html>
