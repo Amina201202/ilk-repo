@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 17px;
+      }
+
+      #form {
+        width: 30vw;
+        padding: 25px;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 50px auto;
+      }
+
+      input,
+      label,
+      button {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+        width: 70%;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      p{
+        text-align: center;
+        font-weight: bold;
+      }
+
+      button{
+        background-color: rgb(66, 148, 148);
+        color: white;
+      }
+
+      table{
+        width: 80vw;
+        margin: 20px auto;
+        border-collapse: collapse;
+      }
+
+      thead{
+        background-color: lightgrey;
+      }
+
+      .delete{
+        background-color: red;
+        padding: 5px;
+        border-radius: 3px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="form">
+      <label for="username">Adınızı yazın</label>
+      <input type="text" name="username" id="username" minlength="3" />
+      <p>Ad ən azı 3 simvoldan ibarət olmalıdır</p>
+      <label for="age">Yaşınızı daxil edin</label>
+      <input type="number" name="age" id="age" min="18" />
+      <p>Yaş ən azı 18 olmalıdır</p>
+      <button onclick="addUser()">TAMAMLA</button>
+    </div>
+
+    <table border="1">
+      <thead>
+        <tbody></tbody>
+        <tr>
+          <th>Username</th>
+          <th>Userage</th>
+          <th>Index</th>
+          <th>Operation</th>
+        </tr>
+      </thead>
+    </table>
+
+    <script src="app.js"></script>
+  </body>
+</html>
